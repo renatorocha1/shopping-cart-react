@@ -7,7 +7,8 @@ import ProductList from "../components/ProductList"
 import ProductItem from "../components/ProductItem"
 
 function Home() {
-  const { products, cart, addProductToCart, removeProductFromCart } = useContext(CartContext)
+  const { products, cart, totalCart, addProductToCart, removeProductFromCart } =
+    useContext(CartContext)
 
   return (
     <main className="container">
@@ -15,15 +16,24 @@ function Home() {
         <Header title="List Products" />
         <ProductList>
           {products.map((item, index) => (
-            <ProductItem key={index} id={index} item={item} handleAdd={addProductToCart} />
+            <ProductItem
+              key={index}
+              id={index}
+              item={item}
+              handleAdd={addProductToCart}
+            />
           ))}
         </ProductList>
       </div>
       <div className="col">
         <Header title="Cart Products" />
-        <CartProducts>
+        <CartProducts totalCart={totalCart}>
           {cart.map((item, index) => (
-            <CartItem key={index} item={item} handleDelete={removeProductFromCart} />
+            <CartItem
+              key={index}
+              item={item}
+              handleDelete={removeProductFromCart}
+            />
           ))}
         </CartProducts>
       </div>
