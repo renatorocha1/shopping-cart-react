@@ -14,7 +14,7 @@
 
 ## Preview
 
-You could see this project on the link [Basic Shopping Cart](https://shopping-cart-react-six.vercel.app/)
+You could see this project on the link [Basic Shopping Cart](https://shopping-cart-react-develop.vercel.app)
 
 <p align="center">
   <img alt="Basic Shopping Cart Preview" src=".github/preview.jpg">
