@@ -1,5 +1,5 @@
 import React from "react"
-import Proptypes from "prop-types"
+import PropTypes from "prop-types"
 import * as S from "./styled"
 import { AddShoppingCart } from "@styled-icons/material-outlined"
 
@@ -20,10 +20,10 @@ const ProductItem = ({ id, item, handleAdd, parsePrice }) => {
   )
 }
 
-ProductItem.propType = {
-  id: Proptypes.number.isRequired,
-  item: Proptypes.object.isRequired,
-  handleAdd: Proptypes.func.isRequired,
+ProductItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  item: PropTypes.object.isRequired,
+  handleAdd: PropTypes.func.isRequired,
 }
 
 export default withPriceFunc(ProductItem)

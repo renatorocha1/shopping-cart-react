@@ -1,5 +1,5 @@
 import React from "react"
-import Proptypes from "prop-types"
+import PropTypes from "prop-types"
 import * as S from "./styled"
 import { Delete } from "@styled-icons/material-twotone"
 
@@ -24,9 +24,9 @@ const CartItem = ({ item, handleDelete, parsePrice, sumItem }) => {
   )
 }
 
-CartItem.propType = {
-  item: Proptypes.object.isRequired,
-  handleDelete: Proptypes.func.isRequired,
+CartItem.propTypes = {
+  item: PropTypes.object.isRequired,
+  handleDelete: PropTypes.func.isRequired,
 }
 
 export default withPriceFunc(CartItem)
