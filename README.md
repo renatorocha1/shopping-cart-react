@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+<h4 align="center">
+  Basic Shopping Cart
+</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologies">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-deploy-it">How to deploy it</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-## Available Scripts
+<br>
 
+## Preview
+
+You could see this project on the link [Basic Shopping Cart](https://shopping-cart-react-six.vercel.app/)
+
+<p align="center">
+  <img alt="Basic Shopping Cart Preview" src=".github/preview.jpg">
+</p>
+
+## 💻 Tecnologies
+
+This project was developed with:
+
+- [React](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Styled Icons](https://styled-icons.dev/)
+
+## 🔖 Project
+
+This project was developed with the objective of implementing a simple shopping cart in react.
+
+## Why did I decide to use Context?
+For this situation the context provides a better way to provide the data in a global way for all components that need it and eventually avoid prop drilling.
+
+## Why did I decide to use Styled Components?
+Styled components provide a more semantic visual hierarchy to the code in addition to greater flexibility.
+
+## Why did I decide to use HOC?
+HOCs are a great way to reuse repeated logic in more components in a practical way, so I used the HOC `withPriceFunc` to pass functions that I will probably use a lot throughout the application.
+
+## 🤔 How to deploy it
 In the project directory, you can run:
+- Run the command `yarn install` or `npm install` to install the packages;
+- Run the command `yarn start` or `npm start` to run the app in the development mode;
+- Open `http://localhost:3000` to view it in your browser;
 
-### `npm start`
+## :memo: License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is under MIT license. See the [LICENSE](LICENSE.md) for more details.
