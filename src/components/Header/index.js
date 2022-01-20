@@ -1,11 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import * as S from "./styled"
+
 const Header = ({title}) => {
   return (
-    <div>
-      <h1>{title}</h1>
-    </div>
+    <S.Container>
+      <S.Title>{title}</S.Title>
+    </S.Container>
   )
 }
 

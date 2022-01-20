@@ -10,21 +10,24 @@ function Home() {
   const { products, cart, addProductToCart, removeProductFromCart } = useContext(CartContext)
 
   return (
-    <>
-      <Header title="List Products" />
-      <ProductList>
-        {products.map((item, index) => (
-          <ProductItem key={index} id={index} item={item} handleAdd={addProductToCart} />
-        ))}
-      </ProductList>
-      <hr/>
-      <Header title="Cart Products" />
-      <CartProducts>
-        {cart.map((item, index) => (
-          <CartItem key={index} item={item} handleDelete={removeProductFromCart} />
-        ))}
-      </CartProducts>
-    </>
+    <main className="container">
+      <div className="col">
+        <Header title="List Products" />
+        <ProductList>
+          {products.map((item, index) => (
+            <ProductItem key={index} id={index} item={item} handleAdd={addProductToCart} />
+          ))}
+        </ProductList>
+      </div>
+      <div className="col">
+        <Header title="Cart Products" />
+        <CartProducts>
+          {cart.map((item, index) => (
+            <CartItem key={index} item={item} handleDelete={removeProductFromCart} />
+          ))}
+        </CartProducts>
+      </div>
+    </main>
   )
 }
 

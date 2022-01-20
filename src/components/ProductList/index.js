@@ -1,7 +1,8 @@
 import React from "react"
+import * as S from "./styled"
 
 const ProductList = ({ children }) => {
-  return <div>{children}</div>
+  return <S.Container>{children}</S.Container>
 }
 
 export default ProductList

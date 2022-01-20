@@ -1,17 +1,17 @@
 import React from "react"
 import Proptypes from "prop-types"
+import * as S from "./styled"
 
 import { withPriceFunc } from "../../HOCs/withPriceFunc"
 
 const ProductItem = ({ id, item, handleAdd, parsePrice }) => {
 
   return (
-    <article>
-      <p>ID: {item.id}</p>
-      <h1>Product name: {item.name}</h1>
-      <span>Price: {parsePrice(item.price)}</span>
-      <button onClick={() => handleAdd(item, id)}>Add+</button>
-    </article>
+    <S.Container>
+      <S.ProductName>{item.name}</S.ProductName>
+      <S.ProductPrice>Price: {parsePrice(item.price)}</S.ProductPrice>
+      <S.ProductBtn onClick={() => handleAdd(item, id)}>Add to cart</S.ProductBtn>
+    </S.Container>
   )
 }
 
