@@ -9,3 +9,9 @@ export const Container = styled.div`
   flex-grow: 0;
   gap: 10px;
 `
+export const Title = styled.h1`
+  font-size: 1.4em;
+  border-bottom: 1px solid #dfe2e8;
+  margin: 20px 0px;
+  padding-bottom: 15px;
+`

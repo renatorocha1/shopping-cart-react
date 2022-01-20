@@ -5,13 +5,16 @@ import { withPriceFunc } from "../../HOCs/withPriceFunc"
 
 const CartProducts = ({ children, totalCart, parsePrice }) => {
   return (
-    <S.Container>
-      {children}
-      <S.TotalCart>
-        <S.TotalCartLabel>Total order:</S.TotalCartLabel>
-        <S.TotalCartPrice>{parsePrice(totalCart)}</S.TotalCartPrice>
-      </S.TotalCart>
-    </S.Container>
+    <>
+      <S.Title>Shopping Cart</S.Title>
+      <S.Container>
+        {children}
+        <S.TotalCart>
+          <S.TotalCartLabel>Total order:</S.TotalCartLabel>
+          <S.TotalCartPrice>{parsePrice(totalCart)}</S.TotalCartPrice>
+        </S.TotalCart>
+      </S.Container>
+    </>
   )
 }
 
