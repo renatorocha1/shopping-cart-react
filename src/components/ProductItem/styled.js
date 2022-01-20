@@ -9,7 +9,8 @@ export const Container = styled.div`
   gap: 10px;
 `
 export const ProductName = styled.h1`
-  font-size: 1.2em;
+  font-size: 1em;
+  margin-bottom: 0px;
 `
 export const ProductPrice = styled.span`
   font-size: 0.9em;
@@ -25,6 +26,10 @@ export const ProductBtn = styled.button`
   border: none;
   border-radius: 6px;
   cursor: pointer;
+
+  &:hover {
+    background: #036de3;
+  }
 `
 export const ProductBtnIcon = styled.span`
   width: 20px;

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  background-color: #f5f6fd;
+  background: #dde2e9;
   padding: 20px;
   border-radius: 6px;
   display: flex;
@@ -22,7 +22,7 @@ export const IconWrapper = styled.div`
   height: 30px;
 `
 export const TotalCart = styled.div`
-  background-color: #e8edf4;
+  background: #fff;
   border-radius: 6px;
   padding: 0px 10px;
   display: flex;
@@ -36,4 +36,5 @@ export const TotalCartLabel = styled.p`
 `
 export const TotalCartPrice = styled.p`
   font-size: 1.2em;
+  font-weight: 700;
 `

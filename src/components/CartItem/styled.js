@@ -9,7 +9,8 @@ export const Container = styled.div`
   gap: 10px;
 `
 export const ProductCartName = styled.h1`
-  font-size: 1.2em;
+  font-size: 1em;
+  margin-bottom: 0px;
 `
 export const ProductCartPrice = styled.span`
   font-size: 0.9em;
@@ -34,6 +35,10 @@ export const ProductCartBtn = styled.button`
   border: none;
   border-radius: 6px;
   cursor: pointer;
+
+  &:hover {
+    background: #cf4e65;
+  }
 `
 export const ProductCartBtnIcon = styled.span`
   width: 25px;
