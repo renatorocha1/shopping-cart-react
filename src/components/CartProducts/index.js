@@ -1,12 +1,18 @@
 import React from "react"
 import * as S from "./styled"
+import { ShoppingBag } from "@styled-icons/boxicons-regular"
 
 import { withPriceFunc } from "../../HOCs/withPriceFunc"
 
 const CartProducts = ({ children, totalCart, parsePrice }) => {
   return (
     <>
-      <S.Title>Shopping Cart</S.Title>
+      <S.Title>
+        Shopping Cart
+        <S.IconWrapper>
+          <ShoppingBag />
+        </S.IconWrapper>
+      </S.Title>
       <S.Container>
         {children}
         <S.TotalCart>

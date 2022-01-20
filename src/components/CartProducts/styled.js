@@ -13,6 +13,13 @@ export const Title = styled.h1`
   border-bottom: 1px solid #dfe2e8;
   margin: 20px 0px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+`
+export const IconWrapper = styled.div`
+  fill: #dfe2e8;
+  width: 30px;
+  height: 30px;
 `
 export const TotalCart = styled.div`
   background-color: #e8edf4;
